@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Student Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../static/info/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../../static/info/bootstrap/css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-dark">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" style="color: white">Student management system</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href={{ link }}>Rewrite personal info</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../../">Logout
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <p class="lead">
+          Your email is {{ student.stu_email }}<br>
+          Your student id is {{ student.stu_id }}<br>
+          Your course(s) this term is/are {{ student.stu_course }}
+      </p>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <!--<img class="card-img-top" width="350" height="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZVPBh0C7ljIrOhPqXElCSzPYBr2qxsg-Z5g&usqp=CAU" alt=""> -->
+
+
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2Nob29sfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pulpit rock"
+            >
+
+            <div class="card-body">
+            <h4 class="card-title">Add</h4>
+            <p class="card-text">
+                Click this part to add courses
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="./add/" class="btn btn-primary">Add</a>
+          </div>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+     <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHNjaG9vbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pulpit rock">
+          <div class="card-body">
+
+            <h4 class="card-title">Drop</h4>
+            <p class="card-text">
+                Click this part to drop courses
+            </p>
+          </div>
+          <div class="card-footer">
+            <a href="./drop/" class="btn btn-primary">Drop</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNjaG9vbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt=""
+          >
+          <div class="card-body">
+             <h4 class="card-title">Show Academic Result</h4>
+            <p class="card-text">Click this part to see your academic results.</p>
+          </div>
+          <div class="card-footer">
+            <a href="./show_academic/" class="btn btn-primary">Show Academic Result</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHNjaG9vbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt=""
+          >
+          <div class="card-body">
+            <h4 class="card-title">Show Course information</h4>
+            <p class="card-text">Click this part to see your courses information.</p>
+          </div>
+          <div class="card-footer">
+            <a href="./show_courses/" class="btn btn-primary">Show My courses</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../static/info/bootstrap/vendor/jquery/jquery.min.js"></script>
+  <script src="../../static/info/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

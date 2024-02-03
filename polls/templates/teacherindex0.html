@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Teacher Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../static/info/bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/info/bootstrap/css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" style="color: white">Welcome, {{ teacher.stu_name }} !</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href={{ link }}>Rewrite personal info</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../">Logout
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <p class="lead">
+          Your email is {{ teacher.stu_email }}<br>
+          Your teacher id is {{ teacher.stu_id }}<br>
+          Your course(s) this term is/are {{ teacher.stu_course }}
+      </p>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1531280518436-9f2cc0fff88a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc2fHxzY2hvb2x8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Update accdemic record</h4>
+            <p class="card-text">In this part, you can update the accdemic record for all students in your course.</p>
+          </div>
+          <div class="card-footer">
+            <a class="btn btn-primary" href={{ update_link }} >Update</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+          <div class="card-body">
+             <h4 class="card-title">Query</h4>
+            <p class="card-text">You could search the information you need.</p>
+          </div>
+          <div class="card-footer">
+            <a href="./{{ teacher.stu_name }}/toquery/" class="btn btn-primary">Query</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/info/bootstrap/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/info/bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
